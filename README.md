@@ -11,7 +11,7 @@ Warning: The code is hacked together and is for sure not the most elegant way to
 o Requirements:
 
 - avr-gcc
-- robotis Bioloid embedded C library ()
+- robotis Bioloid embedded C library (http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm510_v1.01).zip)
 
 
 o Building:
