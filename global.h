@@ -25,3 +25,15 @@
 #define NUM_WHEELS              4 // Number of wheels
 
 #define LOW_VOLTAGE_CUTOFF      10500   // 10.5V is a very safe limit for a 11.7V LiPo
+
+#include <stdint.h>
+
+
+// Standard types
+typedef uint8_t         uint8;
+typedef int8_t          int8;
+typedef uint16_t        uint16;
+typedef int16_t         int16;
+typedef uint32_t        uint32;
+typedef int32_t         int32;
+typedef uint8_t         bool;

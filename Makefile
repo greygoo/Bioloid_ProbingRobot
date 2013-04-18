@@ -5,7 +5,7 @@ OBJCOPY=avr-objcopy
 
 MMCU=atmega2561
 
-SOURCES=$(PROJECT).c drive.c status.c sensors.c claw.c objects.c
+SOURCES=$(PROJECT).c drive.c status.c sensors.c claw.c objects.c adc.c led.c
 OBJS=$(SOURCES:.c=.o)
 
 

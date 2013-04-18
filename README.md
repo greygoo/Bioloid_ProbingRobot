@@ -7,10 +7,31 @@ This was a three day hacking project to run the Probing Robot model using C. Man
 
 Warning: The code is hacked together and is for sure not the most elegant way to do it, The aim was to learn accessing the actators/sensors and to finish within 3 days.
 
-Installation:
 
-You'll need to have avr-gcc installed to compile. To build, simply run
+o Requirements:
 
-   make
+- avr-gcc
+- robotis Bioloid embedded C library ()
 
-This will produce a .hex and a .bin file. You can flash those to the cm510 controller of you Robot using teh Robotis terminal or any other terminal like e.g. gtkterm. Please not that with gtkterm you might only be able to flash the .bin file.
+
+o Building:
+
+- first install the robotis embedded library in your working dir
+- clone the Bioloid_ProbingRobot git repo into your working dir
+- cd into the Bioloid_ProbingRobot
+- build the firnmware by running
+    make
+
+o Installation
+
+- connect your cm510 with serial cable to the usb2serial adapter that came with it
+- start a serial terminal application like robotis terminal on windows or gtkterm on linux
+- set speed to 57600
+- hold the # key pressed in th terminal
+- turn on the cm510
+- the bootloader screen will appear, accepting input
+- type 'ld' and hit <enter>
+- select the built Bioloid_ProbingRobot.hex file for robotis terminal,
+ Bioloid_ProbingRbot.bin for gtkterm
+- the file will be transfered to the cm510
+- when done, power the robot of and on again - it should start behaving as with the default robotis task file for that model

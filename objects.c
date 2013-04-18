@@ -68,7 +68,7 @@ void object_detect(void)
 	// compare object values
 	stop();
 	turn_r();
-	_delay_ms(object * 50);
+	_delay_ms(object * 70);
 	stop();
 	set_aside();
 	drive_f();
